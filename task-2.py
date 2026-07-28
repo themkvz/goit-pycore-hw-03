@@ -24,3 +24,6 @@ assert get_numbers_ticket(0, 100, 5) == []
 assert get_numbers_ticket(1, 100, 0) == []
 assert get_numbers_ticket(1, 100, 101) == []
 assert get_numbers_ticket(1, 10001, 1) == []
+assert get_numbers_ticket(10, 20, 5) != []
+assert len(get_numbers_ticket(10, 20, 5)) == 5
+assert len(get_numbers_ticket(10, 13, 5)) == 0

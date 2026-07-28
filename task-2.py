@@ -2,7 +2,7 @@ import random
 
 
 def get_numbers_ticket(min: int, max: int, quantity: int) -> list[int]:
-    if min < 1 or max > 1000 or quantity < min or quantity > (max - min + 1):
+    if min < 1 or max > 1000 or quantity > (max - min + 1):
         return []
 
     result = set()
@@ -18,6 +18,7 @@ def get_numbers_ticket(min: int, max: int, quantity: int) -> list[int]:
     return sorted(result)
 
 print(get_numbers_ticket(1, 100, 5))
+print(get_numbers_ticket(10, 20, 5))
 
 assert get_numbers_ticket(0, 100, 5) == []
 assert get_numbers_ticket(1, 100, 0) == []
